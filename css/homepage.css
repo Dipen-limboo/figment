@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --primary-color:#111;
+    --secondary-color: #f5f5f5;
+    --third-color: #d5d5d5;
+}
+
+body{
+    font-family:  'Outfit', sans-serif;
+    background-color: var(--primary-color);
+}
+
+i{
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+a{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+
+/* homepage */
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.85rem 6rem;
+}
+
+.logo-div img {
+    height: 3rem;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    gap: 16%;
+    align-items: center;
+}
+
+.right-login {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 1.2rem;
+}
+
+nav input[type="text"] {
+    border: none;
+    outline: none;
+    border-radius: 0.5rem;
+    padding: 0.6rem 3rem;
+    letter-spacing: 1px;
+    font-size: 1rem;
+}
+
+i#search {
+    position: absolute;
+    color: var(--primary-color);
+    left: 2.5%;
+    opacity: 0.75;
+}
+
+.right-nav p {
+    width: 8rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav input[type="text"]::placeholder{
+    opacity: 0.8;
+}
+
+
+#slider-section {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider {
+    min-width: 100%;
+    height: 70vh;
+    background-color: var(--third-color);
+}
+
+.slider img {
+    width: auto;
+    margin: 0 auto;
+    height: 100%;
+    display: block;
+}
+
+.swiper-dot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.swiper-dot .fa-arrow-left, .swiper-dot .fa-arrow-right {
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+}

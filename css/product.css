@@ -1,0 +1,87 @@
+section#product-view-section{
+    min-height: 94vh;
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.product-view-container{
+    width: 70%;
+    min-height: 50vh;
+    margin: 20vh auto;
+    background-color: var(--primary-color);
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.product-image-div{
+    display: flex;
+    gap: 2rem;
+    width: 65%;
+}
+
+.sub-varient-product-container{
+    display: flex;
+    width: 12%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.varient-div{
+    height: 8rem;
+    width: 8rem;
+    border: 0.5px solid var(--primary-color);
+}
+
+.varient-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.product-view-image{
+    width: 65%;
+}
+
+.product-view-image img{
+    width: 80%;
+    height: 35rem;
+}
+
+
+.product-description{
+    width: 35%;
+}
+
+.color-div-container{
+    display: flex;
+    gap: 0.85rem;
+}
+
+.color-div{
+    height: 8rem;
+    width: 8rem;
+}
+
+.color-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.product-view-container {
+    display: none; /* Initially hide all containers */
+}
+
+.product-view-container.active {
+    display: block; /* Display the active container */
+}
+
+.product-image-div {
+    position: relative;
+}
+
+
+.varient-div, .color-div {
+    cursor: pointer;
+    margin: 5px;
+    display: inline-block;
+}

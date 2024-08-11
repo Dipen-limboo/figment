@@ -19,7 +19,7 @@ body{
 
 i{
     color: var(--secondary-color);
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 a{
@@ -34,16 +34,16 @@ header nav {
     justify-content: space-between;
     align-items: center;
     padding: 1.25rem 6rem;
-    min-height: 14vh;
+    min-height: 12vh;
 }
 
 .logo-div img {
-    height: 6rem;
+    height: 4.5rem;
     transition: height 0.5s ease;
 }
 
 .logo-div img:hover{
-    height: 6.25rem;
+    height: 4.75rem;
 }
 
 .left-nav, .right-nav {
@@ -63,8 +63,8 @@ nav input[type="text"] {
     border: none;
     outline: none;
     border-radius: 2.5rem;
-    padding: 0.86rem 4rem;
-    font-size: 1.892rem;
+    padding: 0.56rem 4rem;
+    font-size: 1.25rem;
     border: 3px solid var(--secondary-color);
     background-color: var(--secondary-color);
     transition: background-color 0.5s ease;
@@ -83,12 +83,13 @@ i#search {
 
 .right-nav {
     width: 24%;
+    height: 12vh;
 }
 
 .right-nav p {
     width: 12rem;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .right-nav p a{
@@ -106,8 +107,9 @@ nav input[type="text"]::placeholder{
 }
 
 .hover-icon{
-    width: 40%;
+    width: 54%;
     text-align: center;
+    gap: 0.5rem;
 }
 
 .hover-icon i{
@@ -116,7 +118,7 @@ nav input[type="text"]::placeholder{
 
 .hover-icon i:hover{
     background-color: var(--hover-color);
-    padding: 1rem   0.5rem;
+    padding: 0.95rem 0.25rem;
     border-radius: 50%;
 }
 

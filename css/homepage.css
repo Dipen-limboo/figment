@@ -9,6 +9,7 @@
     --primary-color:#111;
     --secondary-color: #f5f5f5;
     --third-color: #d5d5d5;
+    --hover-color:#b0b0b0;
 }
 
 body{
@@ -18,7 +19,7 @@ body{
 
 i{
     color: var(--secondary-color);
-    font-size: 1.85rem;
+    font-size: 2.5rem;
 }
 
 a{
@@ -32,11 +33,17 @@ header nav {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    padding: 0.85rem 6rem;
+    padding: 1.25rem 6rem;
+    min-height: 14vh;
 }
 
 .logo-div img {
-    height: 4rem;
+    height: 6rem;
+    transition: height 0.5s ease;
+}
+
+.logo-div img:hover{
+    height: 6.25rem;
 }
 
 .left-nav, .right-nav {
@@ -55,27 +62,62 @@ header nav {
 nav input[type="text"] {
     border: none;
     outline: none;
-    border-radius: 0.5rem;
-    padding: 0.86rem 3rem;
-    letter-spacing: 1px;
-    font-size: 1rem;
+    border-radius: 2.5rem;
+    padding: 0.86rem 4rem;
+    font-size: 1.892rem;
+    border: 3px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    transition: background-color 0.5s ease;
+}
+
+nav input[type="text"]:hover{
+    background-color: var(--hover-color);
 }
 
 i#search {
     position: absolute;
     color: var(--primary-color);
-    left: 2.5%;
+    left: 5%;
     opacity: 0.75;
+}
+
+.right-nav {
+    width: 24%;
 }
 
 .right-nav p {
     width: 12rem;
     text-align: center;
-    font-size: 1.85rem;
+    font-size: 2.5rem;
+}
+
+.right-nav p a{
+    transition: color 0.5s ease;
+}
+
+.right-nav p a:hover{
+    color: var(--hover-color);
 }
 
 nav input[type="text"]::placeholder{
-    opacity: 0.8;
+    opacity: 1;
+    color: #000000;
+    font-weight: 700;
+}
+
+.hover-icon{
+    width: 40%;
+    text-align: center;
+}
+
+.hover-icon i{
+    width: 49%;
+}
+
+.hover-icon i:hover{
+    background-color: var(--hover-color);
+    padding: 1rem   0.5rem;
+    border-radius: 50%;
 }
 
 
